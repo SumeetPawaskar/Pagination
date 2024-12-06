@@ -19,7 +19,7 @@ function App() {
         setData(data);
       } catch (error) {
         setError('Failed to fetch data');
-        alert('Failed to fetch data');  // Alert on failed data fetch
+        alert('Failed to fetch data');
       }
     };
 
@@ -72,15 +72,17 @@ function App() {
       </table>
 
       <div className="pagination-controls">
-        <button onClick={handlePrevious} disabled={currentPage === 1}>
+        <button 
+          onClick={handlePrevious} 
+          disabled={currentPage === 1}>
           Previous
         </button>
 
-        <span>
-          {`Page ${currentPage} of ${totalPages}`}
-        </span>
+        <span>{`Page ${currentPage} of ${totalPages}`}</span>
 
-        <button onClick={handleNext} disabled={currentPage === totalPages}>
+        <button 
+          onClick={handleNext} 
+          disabled={currentPage === totalPages}>
           Next
         </button>
       </div>
