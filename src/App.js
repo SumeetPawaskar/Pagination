@@ -78,7 +78,7 @@ function App() {
           Previous
         </button>
 
-        <span>{`Page ${currentPage}`}</span>
+        <div>{`${currentPage}`}</div>
 
         <button 
           onClick={handleNext} 
