@@ -19,6 +19,7 @@ function App() {
         setData(data);
       } catch (error) {
         setError('Failed to fetch data');
+        alert('Failed to fetch data');  // Alert on failed data fetch
       }
     };
 
